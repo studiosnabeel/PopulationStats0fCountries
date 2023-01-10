@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import api from '../redux/api';
+import CountriesList from './CountriesList';
 
 const HomePage = () => {
   const dispatch = useDispatch();
@@ -40,6 +41,11 @@ const HomePage = () => {
           />
         </div>
       </header>
+      {searchItem.length ? (
+        <CountriesList countries={selectedCountries} />
+      ) : (
+        <CountriesList countries={countries} />
+      )}
     </div>
   );
 };
