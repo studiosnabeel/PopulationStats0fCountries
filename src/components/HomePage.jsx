@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import api from '../redux/api';
-import { IconName } from 'react-icons/fa';
 
 const HomePage = () => {
   const dispatch = useDispatch();
@@ -29,9 +28,7 @@ const HomePage = () => {
   return (
     <div>
       <header className="home-container">
-        <div className="search-logo">
-          <IconName className="search-Icon" />
-        </div>
+        <div className="search-logo"></div>
         <div className="input-search">
           {' '}
           <input
