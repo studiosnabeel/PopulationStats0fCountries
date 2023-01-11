@@ -18,7 +18,7 @@ const Country = ({ data }) => {
         <h2>{data.name}</h2>
         <p>
           Population:
-          <span>{data.population}</span>
+          <span className="span">{data.population}</span>
         </p>
       </div>
     </button>
