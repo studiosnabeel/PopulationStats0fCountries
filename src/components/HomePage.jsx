@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import { useSelector, useDispatch } from 'react-redux';
 import api from '../redux/api';
 import CountriesList from './CountriesList';
@@ -28,9 +29,11 @@ const HomePage = () => {
 
   return (
     <div>
-      <header className="home-container">
-        <div className="search-logo"></div>
-        <div className="input-search">
+      <header className="home-header">
+        <div className="logo">
+          <TravelExploreIcon className="svg_icons" />
+        </div>
+        <div className="search">
           {' '}
           <input
             type="text"
