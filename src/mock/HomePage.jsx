@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import { BrowserRouter } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import ContriesList from '../components/ContriesList';
 
 const HomePage = ({ countries }) => {
@@ -43,6 +44,15 @@ const HomePage = ({ countries }) => {
       )}
     </div>
   );
+};
+
+HomePage.propTypes = {
+  countries: PropTypes.shape({
+    name: PropTypes.string,
+    flag: PropTypes.string,
+    population: PropTypes.number,
+    filter: PropTypes.func,
+  }).isRequired,
 };
 
 export default HomePage;

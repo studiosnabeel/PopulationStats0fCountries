@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Country from './Country';
 
 const ContriesList = ({ countries }) => (
@@ -8,5 +9,14 @@ const ContriesList = ({ countries }) => (
     ))}
   </div>
 );
+
+ContriesList.propTypes = {
+  countries: PropTypes.shape({
+    name: PropTypes.string,
+    flag: PropTypes.string,
+    population: PropTypes.number,
+    map: PropTypes.func,
+  }).isRequired,
+};
 
 export default ContriesList;

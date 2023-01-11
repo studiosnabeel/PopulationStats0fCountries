@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const Country = ({ data }) => {
   const navigate = useNavigate();
@@ -22,6 +23,15 @@ const Country = ({ data }) => {
       </div>
     </button>
   );
+};
+
+Country.propTypes = {
+  data: PropTypes.shape({
+    name: PropTypes.string,
+    flag: PropTypes.string,
+    population: PropTypes.number,
+    map: PropTypes.func,
+  }).isRequired,
 };
 
 export default Country;
