@@ -1,14 +1,12 @@
 import React from 'react';
 import Country from './Country';
 
-const CountriesList = () => (
-  <div>
-    <div className="countries" />
-    <div className="countries" />
-    {CountriesList.map((countryData) => (
+const ContriesList = ({ countries }) => (
+  <div className="countries-grid">
+    {countries.map((countryData) => (
       <Country data={countryData} key={countryData.name} />
     ))}
   </div>
 );
 
-export default CountriesList;
+export default ContriesList;
