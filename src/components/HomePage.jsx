@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import { useSelector, useDispatch } from 'react-redux';
-import api from '../redux/api';
-import CountriesList from './CountriesList';
+import getCountries from '../redux/api';
+import ContriesList from './ContriesList';
 
-const HomePage = () => {
+const Homepage = () => {
   const dispatch = useDispatch();
   const countries = useSelector((state) => state.countries.countries);
 
@@ -12,14 +12,13 @@ const HomePage = () => {
 
   useEffect(() => {
     if (countries.length === 0) {
-      dispatch(api());
+      dispatch(getCountries());
     }
   }, [dispatch, countries.length]);
 
-  const selectedCountries = countries.filter(
-    (country) =>
-      country.name.toLowerCase().includes(searchItem.toLocaleLowerCase()) ||
-      country.region.toLowerCase().includes(searchItem.toLocaleLowerCase())
+  const newCountries = countries.filter(
+    (country) => country.name.toLowerCase().includes(searchItem.toLowerCase())
+      || country.region.toLowerCase().includes(searchItem.toLowerCase()),
   );
 
   const handleSearch = (e) => {
@@ -44,13 +43,14 @@ const HomePage = () => {
           />
         </div>
       </header>
+
       {searchItem.length ? (
-        <CountriesList countries={selectedCountries} />
+        <ContriesList countries={newCountries} />
       ) : (
-        <CountriesList countries={countries} />
+        <ContriesList countries={countries} />
       )}
     </div>
   );
 };
 
-export default HomePage;
+export default Homepage;

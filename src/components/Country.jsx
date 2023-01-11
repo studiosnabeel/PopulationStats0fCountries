@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -10,17 +11,15 @@ const Country = ({ data }) => {
 
   return (
     <button type="button" onClick={handleRoute} className="country">
-      <div className="div-country">
-        <img className="image" src={data.flag} alt="" />
-        <div className="details">
-          <h2 className="country-h2">{data.name}</h2>
-          <p country-para>
-            <span>Capital</span> {data.capital}
-          </p>
-          <p>
-            <span>Population</span> {data.population}
-          </p>
-        </div>
+      <div className="image">
+        <img className="country-img" src={data.flag} alt="Country Flag" />
+      </div>
+      <div className="details">
+        <h2>{data.name}</h2>
+        <p>
+          Population:
+          <span>{data.population}</span>
+        </p>
       </div>
     </button>
   );

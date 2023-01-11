@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import { BrowserRouter } from 'react-router-dom';
-import ContriesList from '../components/CountriesList';
+import ContriesList from '../components/ContriesList';
 
 const HomePage = ({ countries }) => {
   const [searchItem, setSearchItem] = useState('');

@@ -44,36 +44,26 @@ Object {
             type="button"
           >
             <div
-              class="div-country"
+              class="image"
             >
               <img
-                alt=""
-                class="image"
+                alt="Country Flag"
+                class="country-img"
                 src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg"
               />
-              <div
-                class="details"
-              >
-                <h2
-                  class="country-h2"
-                >
-                  Afghanistan
-                </h2>
-                <p>
-                  <span>
-                    Capital
-                  </span>
-                   
-                  Kabul
-                </p>
-                <p>
-                  <span>
-                    Population
-                  </span>
-                   
+            </div>
+            <div
+              class="details"
+            >
+              <h2>
+                Afghanistan
+              </h2>
+              <p>
+                Population:
+                <span>
                   40218234
-                </p>
-              </div>
+                </span>
+              </p>
             </div>
           </button>
           <button
@@ -81,36 +71,26 @@ Object {
             type="button"
           >
             <div
-              class="div-country"
+              class="image"
             >
               <img
-                alt=""
-                class="image"
+                alt="Country Flag"
+                class="country-img"
                 src="https://flagcdn.com/ax.svg"
               />
-              <div
-                class="details"
-              >
-                <h2
-                  class="country-h2"
-                >
-                  Åland Islands
-                </h2>
-                <p>
-                  <span>
-                    Capital
-                  </span>
-                   
-                  Mariehamn
-                </p>
-                <p>
-                  <span>
-                    Population
-                  </span>
-                   
+            </div>
+            <div
+              class="details"
+            >
+              <h2>
+                Åland Islands
+              </h2>
+              <p>
+                Population:
+                <span>
                   28875
-                </p>
-              </div>
+                </span>
+              </p>
             </div>
           </button>
         </div>
@@ -157,36 +137,26 @@ Object {
           type="button"
         >
           <div
-            class="div-country"
+            class="image"
           >
             <img
-              alt=""
-              class="image"
+              alt="Country Flag"
+              class="country-img"
               src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg"
             />
-            <div
-              class="details"
-            >
-              <h2
-                class="country-h2"
-              >
-                Afghanistan
-              </h2>
-              <p>
-                <span>
-                  Capital
-                </span>
-                 
-                Kabul
-              </p>
-              <p>
-                <span>
-                  Population
-                </span>
-                 
+          </div>
+          <div
+            class="details"
+          >
+            <h2>
+              Afghanistan
+            </h2>
+            <p>
+              Population:
+              <span>
                 40218234
-              </p>
-            </div>
+              </span>
+            </p>
           </div>
         </button>
         <button
@@ -194,36 +164,26 @@ Object {
           type="button"
         >
           <div
-            class="div-country"
+            class="image"
           >
             <img
-              alt=""
-              class="image"
+              alt="Country Flag"
+              class="country-img"
               src="https://flagcdn.com/ax.svg"
             />
-            <div
-              class="details"
-            >
-              <h2
-                class="country-h2"
-              >
-                Åland Islands
-              </h2>
-              <p>
-                <span>
-                  Capital
-                </span>
-                 
-                Mariehamn
-              </p>
-              <p>
-                <span>
-                  Population
-                </span>
-                 
+          </div>
+          <div
+            class="details"
+          >
+            <h2>
+              Åland Islands
+            </h2>
+            <p>
+              Population:
+              <span>
                 28875
-              </p>
-            </div>
+              </span>
+            </p>
           </div>
         </button>
       </div>
