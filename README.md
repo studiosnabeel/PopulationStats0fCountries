@@ -70,7 +70,7 @@ This is a web application that fetches Countries data from API and shows All Cou
 
 <!-- > Add a link to your deployed project. -->
 
-- [Live Demo Link](https://63b9b9ce5949684d5df52e43--magenta-raindrop-eb2c36.netlify.app/)
+- [Live Demo Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
