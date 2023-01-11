@@ -60,7 +60,9 @@ Object {
               </h2>
               <p>
                 Population:
-                <span>
+                <span
+                  class="span"
+                >
                   40218234
                 </span>
               </p>
@@ -87,7 +89,9 @@ Object {
               </h2>
               <p>
                 Population:
-                <span>
+                <span
+                  class="span"
+                >
                   28875
                 </span>
               </p>
@@ -153,7 +157,9 @@ Object {
             </h2>
             <p>
               Population:
-              <span>
+              <span
+                class="span"
+              >
                 40218234
               </span>
             </p>
@@ -180,7 +186,9 @@ Object {
             </h2>
             <p>
               Population:
-              <span>
+              <span
+                class="span"
+              >
                 28875
               </span>
             </p>
