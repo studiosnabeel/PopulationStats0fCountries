@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import { BrowserRouter } from 'react-router-dom';
 import ContriesList from '../components/CountriesList';
+
 const HomePage = ({ countries }) => {
   const [searchItem, setSearchItem] = useState('');
 
   const selectedCountries = countries.filter(
-    (country) =>
-      country.name.toLowerCase().includes(searchItem.toLowerCase()) ||
-      country.region.toLowerCase().includes(searchItem.toLowerCase())
+    (country) => country.name.toLowerCase().includes(searchItem.toLowerCase())
+      || country.region.toLowerCase().includes(searchItem.toLowerCase()),
   );
 
   const handleSearch = (e) => {
