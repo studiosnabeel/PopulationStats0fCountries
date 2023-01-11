@@ -149,7 +149,6 @@ describe('Test for Home Page', () => {
       },
     ];
 
-    // eslint-disable-next-line testing-library/render-result-naming-convention
     const tree = render(<HomePage countries={countries} />);
     expect(tree).toMatchSnapshot();
   });
