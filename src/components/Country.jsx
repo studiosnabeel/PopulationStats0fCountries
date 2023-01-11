@@ -7,16 +7,20 @@ const Country = ({ data }) => {
   const handleRoute = () => {
     navigate(`/details/${data.name}`, { state: data });
   };
+
   return (
-    <button onClick={handleRoute} type="button" className="country-card">
-      <div className="img">
-        <img className="country-img" src="{data.flag}" alt="Flag of country" />
-      </div>
-      <div className="detail">
-        <h2>{data.name}</h2>
-        <p>
-          population: <span>{data.population}</span>
-        </p>
+    <button type="button" onClick={handleRoute} className="country">
+      <div className="div-country">
+        <img className="image" src={data.flag} alt="" />
+        <div className="details">
+          <h2 className="country-h2">{data.name}</h2>
+          <p country-para>
+            <span>Capital</span> {data.capital}
+          </p>
+          <p>
+            <span>Population</span> {data.population}
+          </p>
+        </div>
       </div>
     </button>
   );
