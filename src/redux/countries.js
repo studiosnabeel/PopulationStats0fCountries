@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-/* eslint-disable import/extensions */
-import api from './api';
+import Api from './Api';
 
 const initialState = {
   countries: [],
@@ -10,7 +9,7 @@ const countriesSlice = createSlice({
   name: 'countries',
   initialState,
   extraReducers: (builder) => {
-    builder.addCase(api.fulfilled, (state, action) => ({
+    builder.addCase(Api.fulfilled, (state, action) => ({
       ...state,
       countries: action.payload,
     }));

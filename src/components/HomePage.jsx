@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import { useSelector, useDispatch } from 'react-redux';
-import getCountries from '../redux/api';
+import Api from '../redux/Api';
 import ContriesList from './ContriesList';
 
 const Homepage = () => {
@@ -12,7 +12,7 @@ const Homepage = () => {
 
   useEffect(() => {
     if (countries.length === 0) {
-      dispatch(getCountries());
+      dispatch(Api());
     }
   }, [dispatch, countries.length]);
 
