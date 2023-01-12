@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+/* eslint-disable import/extensions */
 import api from './api';
 
 const initialState = {
