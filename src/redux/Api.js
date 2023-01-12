@@ -10,4 +10,4 @@ const api = createAsyncThunk('api', async () => {
   }
 });
 
-export default api;
+export default { api };
